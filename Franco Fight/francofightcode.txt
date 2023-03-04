@@ -1,0 +1,32 @@
+.player{
+    position: absolute;
+    width: 240px;
+    height: 240px;
+}
+.skin{
+    background: url(Player/Skin.png) repeat-x 0px 0px;;
+    /*filter: invert(86%) sepia(10%) saturate(838%) hue-rotate(338deg) brightness(107%) contrast(99%);*/
+}
+.clothes{
+    background: url(Player/Clothes.png) repeat-x 0px 0px;;
+    /*filter: invert(42%) sepia(100%) saturate(364%) hue-rotate(168deg) brightness(94%) contrast(108%);*/
+}
+.eyes{
+    background: url(Player/Eyes.png) repeat-x 0px 0px;;
+}
+.shadow{
+    background: url(Player/Shadow.png) repeat-x 0px 0px;;
+    /*filter: invert(46%) sepia(16%) saturate(742%) hue-rotate(331deg) brightness(98%) contrast(87%);*/
+}
+
+
+
+<body>
+    <div id="player">
+        <div class="player skin">
+        <div class="player clothes">
+        <div class="player shadow">
+        <div class="player eyes">
+    </div>
+    <script type="module" src="js.js"> </script>
+</body>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swords Fight by Yuliox</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body style="display: flex; align-items: center; justify-content: center; background-color: black;">
+    <!--Contenedor-->
+    <div style="position: relative; display: inline-block;">
+        <!--Vidas y Tiempo-->
+        <div id="lifeInterface" style="opacity: 1; position: absolute; display: flex; width: 100%; align-items: center; padding: 10px;">
+            <!--vida de Player-->
+            <div style="background-color: black; height: 30px; width: 100%; display: flex; justify-content: end; border: 2px solid white; border-right: none;">
+                <div id="playerHealth" style="background-color: red; height: 100%; width: 100%;"></div>
+            </div>
+            <!--Tiempo-->
+            <div id="timer" style="color:white; border: 2px solid white; background-color:black ; height: 60px; width: 100px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; user-select: none;"></div>
+            <!--vida de Enemy-->
+            <div style="background-color:black ; height: 30px; width: 100%; border: 2px solid white; border-left: none;">
+                <div id="enemyHealth" style="background-color: red; height: 100%; width: 100%;"></div>
+            </div>
+        </div>
+        <div id="results" style="position: absolute; color: white; display: flex; align-items: center; justify-content: center; top:0; right: 0; bottom: 0; left: 0;"> </div>
+        <canvas style="background-image: url(Fight\ Zone.gif); background-size: 100%;"></canvas>
+        <div style="position: relative; display: inline-block; display: flex;">
+            <input type="text" placeholder="Player 1" id="pOne" style="font-size: 15px; margin: 5px;"> </input>
+            <input type="text" placeholder="Player 2" id="pTwo" style="font-size: 15px; margin: 5px;"> </input>
+            <button id="startButton"> Submit </button>
+        </div>
+    </div>
+    <script src="Classes/classes.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
